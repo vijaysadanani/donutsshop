@@ -1,0 +1,9 @@
+<button mat-button (click)="navigateToHome()">Home</button>
+<mat-card *ngFor="let cartItem of cart">
+    {{cartItem.name}} -- Calories: {{cartItem.calories}} -- Price: $1
+    <button (click)="removeDonut(cartItem)">Remove Donut</button>
+</mat-card>
+<mat-card>Total Calories: {{sumOfCalories}}<br>
+    Total Price: ${{cartLength}}<br>
+    Total # of items in cart: {{cartLength}}</mat-card>
+    

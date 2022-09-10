@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-title>
+        {{donutDetails.name}}
+    </mat-card-title>
+    <mat-card-content>
+        Calories: {{donutDetails.calories}}
+    </mat-card-content>
+    <mat-card-content>
+        Extras: {{donutDetails.extras}}
+    </mat-card-content>
+    <img mat-card-image style="width:4em; height:3em;" src="{{donutDetails.photo}}">
+</mat-card>
+<button mat-button (click)="addToCart()">Add to Cart</button>

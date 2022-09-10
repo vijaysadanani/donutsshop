@@ -1,0 +1,7 @@
+<mat-card><mat-card-title>Donuts Shop</mat-card-title>
+<mat-card-content>Please select a donut from the list below and you can proceed to add that to your cart.</mat-card-content></mat-card>
+<button mat-button (click)="navigateToHome()">Home</button>
+<button mat-button (click)="navigateToCart()">Cart</button>
+<mat-card *ngFor="let donut of donuts?.results">
+  <button mat-stroked-button [routerLink]="['/donutDetail', donut.id]"><mat-card-title>{{donut.name}}</mat-card-title></button>
+</mat-card>
